@@ -1,0 +1,6 @@
+example/build.js
+node_modules
+.editorconfig
+.idea
+test/build.js
+package-lock.json

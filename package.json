@@ -1,0 +1,38 @@
+{
+  "name": "browser-system-detect",
+  "version": "0.5.0",
+  "description": "Get and watch system information in a browser",
+  "license": "MIT",
+  "repository": "wearemetabolism/system-detect",
+  "author": {
+    "name": "Jérome Barbato",
+    "email": "jerome@metabolism.fr"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "browserify test/index.js -o test/build.js -dv",
+    "build": "browserify test/index.js -o dist/index.js"
+  },
+  "files": [
+    "dist/index.js"
+  ],
+  "keywords": [
+    "battery",
+    "browser",
+    "charge",
+    "charging",
+    "level",
+    "watch",
+    "system",
+    "os",
+    "detect"
+  ],
+  "devDependencies": {
+    "browserify": "^12.0.1"
+  },
+  "dependencies": {
+    "bowser": "^2.11.0"
+  }
+}
