@@ -2,7 +2,7 @@
 
 const Bowser = require("bowser");
 
-module.exports = function (config) {
+export default function (config) {
 
 	let defaultConfig = {
 		bodyClass : false,
@@ -300,4 +300,4 @@ module.exports = function (config) {
 	systemChanged();
 
 	return system;
-};
+}

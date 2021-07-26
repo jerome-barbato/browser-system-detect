@@ -1,6 +1,6 @@
 {
   "name": "browser-system-detect",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Get and watch system information in a browser",
   "license": "MIT",
   "repository": {
@@ -15,12 +15,11 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "browserify test/index.js -o test/build.js -dv",
-    "build": "browserify index.js -o dist/index.js"
+    "test": "browserify -p esmify test/index.js -o test/build.js -dv"
   },
-  "main": "dist/index.js",
+  "main": "index.js",
   "files": [
-    "dist/index.js"
+    "index.js"
   ],
   "keywords": [
     "battery",
@@ -34,7 +33,8 @@
     "detect"
   ],
   "devDependencies": {
-    "browserify": "^12.0.1"
+    "browserify": "^12.0.1",
+    "esmify": "^2.1.1"
   },
   "dependencies": {
     "bowser": "^2.11.0"

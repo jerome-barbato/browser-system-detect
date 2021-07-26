@@ -13,7 +13,7 @@ $ npm install --save browser-system-detect
 ## Usage
 
 ```js
-const detect = require('browser-system-detect');
+import detect from 'browser-system-detect';
 
 let system = detect({bodyClass:true});
 

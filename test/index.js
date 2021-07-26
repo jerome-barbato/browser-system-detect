@@ -1,5 +1,5 @@
 'use strict';
-const detect = require('../');
+import detect from '../index';
 
 window.addEventListener('systemchange',function (e){
 
