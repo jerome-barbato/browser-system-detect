@@ -1,9 +1,12 @@
 {
   "name": "browser-system-detect",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Get and watch system information in a browser",
   "license": "MIT",
-  "repository": "wearemetabolism/system-detect",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wearemetabolism/browser-system-detect"
+  },
   "author": {
     "name": "Jérome Barbato",
     "email": "jerome@metabolism.fr"
@@ -15,6 +18,7 @@
     "test": "browserify test/index.js -o test/build.js -dv",
     "build": "browserify test/index.js -o dist/index.js"
   },
+  "main": "dist/index.js",
   "files": [
     "dist/index.js"
   ],
