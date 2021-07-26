@@ -111,6 +111,8 @@ export default function (config) {
 			document.body.classList.add(system.os.name);
 			if( system.os.version )
 				document.body.classList.add(system.os.name+'-'+system.os.version);
+
+			document.body.classList.add(system.touch ? 'touch' : 'no-touch');
 		}
 	}
 
@@ -181,7 +183,8 @@ export default function (config) {
 	let system = {
 		connection : false,
 		powermode : true,
-		grade : false
+		grade : false,
+		touch : false
 	};
 
 	if (!navigator){
@@ -189,6 +192,8 @@ export default function (config) {
 		console.error('Browser not supported');
 		return;
 	}
+
+	system.touch = 'ontouchstart' in window || navigator.msMaxTouchPoints || false;
 
 	detectPowerMode();
 

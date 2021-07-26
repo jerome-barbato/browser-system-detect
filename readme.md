@@ -44,6 +44,7 @@ Consider OS not up to date if detected version is prior last version minus `osVe
 - `powermode`
 - `browser`
 - `memory`
+- `touch`
 - `cpu`
 - `screen`
 - `os`
@@ -62,6 +63,7 @@ Consider OS not up to date if detected version is prior last version minus `osVe
     "connection": {
         "effectiveType": "4g"
     },
+    "touch": true,
     "powermode": false,
     "grade": "A",
     "browser": {
