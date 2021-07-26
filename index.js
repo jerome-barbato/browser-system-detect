@@ -1,6 +1,6 @@
 'use strict';
 
-const Bowser = require("bowser");
+import Bowser from "bowser";
 
 export default function (config) {
 
