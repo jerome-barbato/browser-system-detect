@@ -1,4 +1,4 @@
-# Browser system detect ( beta )
+# Browser system detect
 
 > Get and watch system information in a browser
 
@@ -151,6 +151,7 @@ score = Math.round((score/8)*10);
 
 [www.groupeavril.com](https://www.groupeavril.com/)
 
+[www.groupe-seche.com](https://www.groupe-seche.com/)
 
 ## License
 

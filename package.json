@@ -1,6 +1,6 @@
 {
   "name": "browser-system-detect",
-  "version": "0.5.5",
+  "version": "0.6.0",
   "description": "Get and watch system information in a browser",
   "license": "MIT",
   "repository": {
@@ -9,7 +9,7 @@
   },
   "author": {
     "name": "Jérome Barbato",
-    "email": "jerome@metabolism.fr"
+    "email": "jerome.barbato@gmail.com"
   },
   "engines": {
     "node": ">=0.10.0"

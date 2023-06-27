@@ -1,6 +1,6 @@
 'use strict';
 
-import Bowser from "bowser";
+import Bowser from "bowser/bundled";
 
 export default function (config) {
 
@@ -11,29 +11,29 @@ export default function (config) {
 	}
 
 	let browserVersion = {
-		"chrome" : 91,
+		"chrome" : 114,
 		"firefox" : {
-			"desktop": 89,
-			"mobile": 34
+			"desktop": 102,
+			"mobile": 79
 		},
 		"edge" : {
-			"desktop": 91,
-			"mobile": 46
+			"desktop": 114,
+			"mobile": 113
 		},
 		"opera" : {
-			"desktop": 76,
-			"mobile": 63
+			"desktop": 100,
+			"mobile": 76
 		},
 		"ie" : 11,
-		"safari" : 14
+		"safari" : 16
 	}
 
 	let osVersion = {
-		"windows" : 10,
-		"android" : 11,
-		"ios" : 14,
-		"macos" : 11,
-		"chromeos" : 91
+		"windows" : 11,
+		"android" : 13,
+		"ios" : 16,
+		"macos" : 13,
+		"chromeos" : 114
 	}
 
 	config = {...defaultConfig, ...config};
@@ -198,7 +198,7 @@ export default function (config) {
 	detectPowerMode();
 
 	system.browser = {
-		name: bowser.getBrowserName(true).replace('microsoft ',''),
+		name: bowser.getBrowserName(true).replace('microsoft ', '').replace(' for android', '').replace(/ /g, '-'),
 		version: bowser.getBrowserVersion()?parseFloat(bowser.getBrowserVersion()):null,
 		uptodate: null,
 		features: {
